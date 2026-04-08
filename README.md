@@ -31,7 +31,7 @@ I am learning how to create HTML forms and process the data entered into the for
 ## Processing form data with JavaScript
 - Define a function to process the form that takes the event parameter e.g. ```processForm(event)```
 - Use ```element.value``` to get the data selected by the user, where *element* is a variable containing a form element
-- Call ````event.preventDefault()``` to prevent the form submission from reloading the page
+- Call ```event.preventDefault()``` to prevent the form submission from reloading the page
 
 ## Example form processing function
 ```javascript
@@ -46,3 +46,6 @@ function processForm(event) {
 # Example
 1. Create a form that allows the user to enter their first name, last name, email, and birthdate.
 2. Write a function that processes the form and adds a paragraph element containg the information entered by the user
+
+# Practice Exercise
+Add a color picker and set the text or background color of the paragraph elements to the selected color

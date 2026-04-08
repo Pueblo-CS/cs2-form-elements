@@ -1,13 +1,19 @@
 function processForm(event) {
     event.preventDefault();
-    let fNameInput = document.getElementById("firstname");
-    let lNameInput = document.getElementById("lastname");
+    // Get input elements
+    let fName = document.getElementById("firstname");
+    let lName = document.getElementById("lastname");
+    let email = document.getElementById("email");
+    let dob = document.getElementById("birthdate");
 
-    showResults(fNameInput.value, lNameInput.value);
+    addParagraph(fName.value + " " + lName.value);
+    addParagraph(email.value);
+    addParagraph(dob.value);
+    
 }
 
-function showResults(first, last) {
+function addParagraph(text) {
     let p = document.createElement("p");
-    p.innerText = last + ", " + first;
+    p.innerText = text;
     document.body.appendChild(p);
 }
