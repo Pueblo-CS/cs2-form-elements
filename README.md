@@ -50,6 +50,6 @@ function processForm(event) {
 # Practice Exercise
 Add a color picker and set the background color of the paragraph elements to the selected color
 1. Add an ```<input>``` tag with ```type="color"``` to the form. Be sure to give it an *id* too.
-2. Add code to your ```start()``` function to get the color input and its value
+2. Add code to your ```processForm``` function to get the color input and its value
 3. Modify the ```addParagraph``` function to take a second parameter e.g. ```addParagraph(text, color)```
 4. Set the background color of the paragraph element
